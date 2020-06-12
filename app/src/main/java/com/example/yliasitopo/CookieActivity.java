@@ -18,7 +18,7 @@ public class CookieActivity extends AppCompatActivity {
     private int discriminant = ((b*b) - (4*a*c));
     private int resultat_zero = (-b /(2 * a));
     private int x1 = (int) ((-b-(Math.sqrt(discriminant)))/(2*a));
-
+    private ImageView cache;
 
 
     @Override
@@ -28,6 +28,7 @@ public class CookieActivity extends AppCompatActivity {
 
         this.Point = (TextView) findViewById(R.id.Point);
         this.cible = (ImageView) findViewById(R.id.cible);
+        this.cache = (ImageView) findViewById(R.id.cache);
 
 
         cible.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +43,14 @@ public class CookieActivity extends AppCompatActivity {
                 else{
                     Point.setText("Resultat l'orsque le nombre est = a 0    " +   resultat_zero);
                 }
+
+            }
+        });
+        cache.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Point.setText("Deuxieme bouton");
 
             }
         });
