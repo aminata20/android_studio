@@ -21,7 +21,7 @@ public class Example_Dialog extends AppCompatDialogFragment {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         if (discriminant < 0){
-        builder.setTitle("Resultat du discriminant")
+        builder.setTitle("resultat du discriminant")
                 .setMessage("Discriminant est = a  " + " " + discriminant)
                 .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
