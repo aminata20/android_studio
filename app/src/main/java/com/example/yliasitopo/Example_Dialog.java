@@ -20,16 +20,15 @@ public class Example_Dialog extends AppCompatDialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        if (discriminant < 0){
-        builder.setTitle("resultat du discriminant")
-                .setMessage("Discriminant est = a  " + " " + discriminant)
+        builder.setTitle("Resultat du discriminant")
+                .setMessage("Discriminant est =   " + " " + discriminant)
                 .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }
 
                 });
-        }
+
         return builder.create();
     }
 

@@ -7,77 +7,73 @@
     tools:context=".CookieActivity"
     android:background="@drawable/math">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="0dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/cible"
-                    android:layout_width="75dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@android:drawable/ic_input_add" />
-
-                <TextView
-                    android:id="@+id/Point"
-                    android:layout_width="376dp"
-                    android:layout_height="175dp"
-                    android:layout_weight="1"
-                    android:text="Resultat du discriminant"
-                    android:textSize="32dp" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="364dp"
-        android:orientation="horizontal"
+    <TextView
+        android:id="@+id/Point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:text="DISCRIMINANT"
+        android:textColor="@color/design_default_color_secondary_variant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="364dp"
-            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="a : "
+        android:textColor="@color/design_default_color_secondary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="141dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Resu"
-                android:onClick="display text"/>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="b : "
+        android:textColor="@color/design_default_color_secondary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527" />
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="c : "
+        android:textColor="@color/design_default_color_secondary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
 
-    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:onClick="display text"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:text="Resultat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Point" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
