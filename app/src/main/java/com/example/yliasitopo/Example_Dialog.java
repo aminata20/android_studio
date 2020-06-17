@@ -9,8 +9,8 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 
 public class Example_Dialog extends AppCompatDialogFragment {
     private int x = 0;
-    private int b = 12;
-    private int a = 3;
+    private int b = 3;
+    private int a = 12;
     private int c = 12;
     private int discriminant = ((b*b) - (4*a*c));
     private int resultat_zero = (-b /(2 * a));
